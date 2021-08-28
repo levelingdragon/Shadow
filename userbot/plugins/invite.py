@@ -2,7 +2,7 @@ from telethon import functions
 
 
 @bot.on(admin_cmd(pattern="invite ?(.*)"))
-@bot.on(sudo_cmd(pattern="invite ?(.*)", allow_sudo=True))
+@bot.on(sudo_cmd(pattern="invitex ?(.*)", allow_sudo=True))
 async def _(event):
     if event.fwd_from:
         return
